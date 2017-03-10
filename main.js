@@ -15,16 +15,19 @@ window.onload = function() {
     var scott;
     var anim;
     var loopText;
-
+    var d = 1;
     function create () {
 
   //      var logo = game.add.sprite(game.world.centerX, game.world.centerY, 'logo');
     //    logo.anchor.setTo(0.5, 0.5);
-      back = game.add.image(0,0, 'back')
+      back = game.add.image(0,-400, 'back')
       //back.smoothed = false;
       scott = game.add.sprite(200, 0, 'scottrun');
       anim  = scott.animations.add('run');
-      anim.play('2',true);
+      anim.play(10,true);
     }
 
+    function update() {
+      back.x -= d;
+    }
 };
