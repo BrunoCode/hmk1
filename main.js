@@ -9,7 +9,7 @@ window.onload = function() {
     function preload () {
 
         game.load.image('back', 'back.jpg');
-        game.load.spritesheet('scottrun','run.png',50,63, 8);
+        game.load.spritesheet('scottrun','scott.png',280, 285, 10);
     }
     var back;
     var scott;
@@ -24,7 +24,7 @@ window.onload = function() {
       //back.smoothed = false;
       scott = game.add.sprite(200, 360, 'scottrun');
       anim  = scott.animations.add('run');
-      anim.play('30',true);
+      anim.play('5',true);
     }
 
 };
