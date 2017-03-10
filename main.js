@@ -22,7 +22,7 @@ window.onload = function() {
     //    logo.anchor.setTo(0.5, 0.5);
       back = game.add.image(0,0, 'back')
       //back.smoothed = false;
-      scott = game.add.sprite(200, 400, 'scottrun');
+      scott = game.add.sprite(200, 0, 'scottrun');
       anim  = scott.animations.add('run');
       anim.play('5',true);
     }
