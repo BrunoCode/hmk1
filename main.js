@@ -24,7 +24,7 @@ window.onload = function() {
       //back.smoothed = false;
       scott = game.add.sprite(200, 0, 'scottrun');
       anim  = scott.animations.add('run');
-      anim.play('5',true);
+      anim.play('2',true);
     }
 
 };
