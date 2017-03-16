@@ -20,14 +20,14 @@ window.onload = function() {
 
   //      var logo = game.add.sprite(game.world.centerX, game.world.centerY, 'logo');
     //    logo.anchor.setTo(0.5, 0.5);
-      back = game.add.image(0,-200, 'back')
+      back = game.add.image(0,-100, 'back')
       //back.smoothed = false;
-      scott = game.add.sprite(300, 0, 'scottrun');
+      scott = game.add.sprite(300,300, 'scottrun');
       anim  = scott.animations.add('run');
       anim.play(10,true);
     }
 
     function update() {
-      back.x -= d;
+      back.x -= 1;
     }
 };
